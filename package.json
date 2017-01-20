@@ -5,7 +5,7 @@
   "author": "Ben Kirzhner <ben.kirzhner@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "fuse": "^0.3.0",
+    "fuse.js": "2.6.1",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.6",
