@@ -38,6 +38,7 @@ FACTION_ICONS = {
 # }
 
 ABBREVIATIONS = {
+	'snek': 'Cobra',
 	'proco': 'Professional Contacts',
 	'procon': 'Professional Contacts',
 	'jhow': 'Jackson Howard',
