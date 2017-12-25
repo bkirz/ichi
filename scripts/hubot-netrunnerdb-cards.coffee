@@ -497,7 +497,6 @@ module.exports = (robot) ->
 		.get() (err, res, body) ->
 			cardData = JSON.parse body
 			robot.brain.set 'cards', cardData.data.sort(compareCards)
-			robot.brain.set 'imageUrlTemplate', cardData.imageUrlTemplate
 
 	robot.http("https://netrunnerdb.com/api/2.0/public/packs")
 		.get() (err, res, body) ->
@@ -560,7 +559,7 @@ module.exports = (robot) ->
 		card = lookupCard(query, robot.brain.get('cards'))
 
 		if card
-			res.send robot.brain.get('imageUrlTemplate').replace /\{code\}/, card.code
+			res.send card.image_url
 		else
 			res.send "No card result found for \"" + res.match[1] + "\"."
 
